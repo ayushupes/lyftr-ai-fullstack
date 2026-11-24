@@ -6,7 +6,7 @@ def create_mock_completion(content="The capital of France is Paris.", prompt_tok
         id="mock-1",
         choices=[Choices(message=Message(role="assistant", content=content))],
         created=1000,
-        model="gemini/gemini-2.0-flash",
+        model="gemini/gemini-3.5-flash-lite",
         usage=Usage(prompt_tokens=prompt_tokens, completion_tokens=completion_tokens, total_tokens=prompt_tokens + completion_tokens)
     )
 
@@ -21,7 +21,7 @@ def test_valid_chat_response_contract(client):
         
         meta = data["metadata"]
         assert meta["resolution_source"] == "LIVE_INFERENCE"
-        assert meta["model"] == "gemini/gemini-2.0-flash"
+        assert meta["model"] == "gemini/gemini-3.5-flash-lite"
         assert isinstance(meta["latency_ms"], int)
         assert meta["latency_ms"] >= 0
         assert isinstance(meta["input_tokens"], int)

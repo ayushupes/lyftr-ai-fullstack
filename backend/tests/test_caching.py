@@ -9,7 +9,7 @@ def create_mock_completion(content="Paris is the capital of France.", prompt_tok
         id="mock-cache-test",
         choices=[Choices(message=Message(role="assistant", content=content))],
         created=1000,
-        model="gemini/gemini-2.0-flash",
+        model="gemini/gemini-3.5-flash-lite",
         usage=Usage(prompt_tokens=prompt_tokens, completion_tokens=completion_tokens, total_tokens=prompt_tokens + completion_tokens)
     )
     return resp

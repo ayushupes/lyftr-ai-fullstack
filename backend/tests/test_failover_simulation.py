@@ -9,7 +9,7 @@ def create_mock_completion(content="Success response", prompt_tokens=25, complet
         id="mock-failover",
         choices=[Choices(message=Message(role="assistant", content=content))],
         created=1000,
-        model="gemini/gemini-2.0-flash",
+        model="gemini/gemini-3.5-flash-lite",
         usage=Usage(prompt_tokens=prompt_tokens, completion_tokens=completion_tokens, total_tokens=prompt_tokens + completion_tokens)
     )
 

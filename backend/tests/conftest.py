@@ -25,7 +25,7 @@ def setup_test_env(tmp_path):
     settings.DATABASE_URL = f"sqlite:///{db_file}"
     settings.LLM_API_KEYS = "test_key_1,test_key_2"
     settings.ENABLE_FAILURE_SIMULATION = True
-    settings.LLM_MODEL = "gemini/gemini-2.0-flash"
+    settings.LLM_MODEL = "gemini/gemini-3.5-flash-lite"
     
     # Reset LiteLLM cache
     litellm.cache = Cache(type="local")
