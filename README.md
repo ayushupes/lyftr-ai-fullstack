@@ -5,6 +5,13 @@ A production-ready full-stack AI chatbot application featuring multi-turn conver
 ---
 
 ## 1. Live URLs
+## 1. Live URLs
+
+- **Frontend:** https://lyftr-ai-chatbot-topaz.vercel.app
+- **Backend:** https://lyftr-ai-fullstack.onrender.com
+- **Backend Health:** https://lyftr-ai-fullstack.onrender.com/health
+- **API Docs:** https://lyftr-ai-fullstack.onrender.com/docs
+- **GitHub Repository:** https://github.com/ayushupes/lyftr-ai-fullstack
 
 - **Frontend Application:** `https://lyftr-chat-frontend.vercel.app` *(or your deployed Vercel/Netlify URL)*
 - **Backend API Gateway:** `https://lyftr-backend-api.onrender.com` *(or your deployed Render/Railway/Fly.io URL)*
